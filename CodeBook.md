@@ -10,24 +10,21 @@ Steps involved in making the tidy data set (data_mean):
 =======================================================
 
 1. Train and test data were merged.
-    - To get the train data, UCI HAR Dataset/train/subject_train.txt, UCI HAR Dataset/train/X_train.txt and UCI HAR Dataset/train/y_train.txt were combined using cbind.
+    - To get the train data, UCI HAR Dataset/train/subject_train.txt, UCI HAR Dataset/train/X_train.txt and UCI HAR Dataset/train/y_train.txt were combined using  cbind.
     - To get the test data, UCI HAR Dataset/test/subject_test.txt, UCI HAR Dataset/test/X_test.txt and UCI HAR Dataset/test/y_test.txt were binded using cbind.
     - These data sets were then merged using rbind.
     
-2. Extracts only the measurements on the mean and standard deviation for each measurement.
-    - Finds the target features, which are the features with measurements about mean and standard deviation, and extracts them as well as those that indicate the 'Subject' and 'Activity' 
-     and creates a new data table only with the target variables.
+2. Extraction of only the measurements on the mean and standard deviation for each measurement.
      
 3. Uses descriptive activity names to name the activities in the data set.
     - Replace the variable about activity, that contains integers from 1 to 6, with a factor based on levels and labels contained in the 'activity_labels' data file.
 
-4. Appropriately labels the data set with target variables with descriptive names.
+4. Appropriately labels the data set with target variables with appropriate names.
     - Extracts the target variable names from 'features.txt'.
     - Creates a new tidy dataset with the appropriate labels for the variable names.
     
-5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
-    - First the dataset was grouped by 'Subject' and 'Activity' then using summarise from dplyr package to find the mean of each variable.
-    - the table data_mean is the required dataset.
+5. First the dataset was grouped by 'Subject' and 'Activity' then using summarise from dplyr package to find the mean of each variable.
+    - The table data_mean is the required dataset.
     
     
 

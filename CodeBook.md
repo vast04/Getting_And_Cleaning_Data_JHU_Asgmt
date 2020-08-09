@@ -27,6 +27,7 @@ Steps involved in making the tidy data set (data_mean):
     
 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
     - First the dataset was grouped by 'Subject' and 'Activity' then using summarise from dplyr package to find the mean of each variable.
+    - the table data_mean is the required dataset.
     
     
 

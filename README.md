@@ -1,4 +1,4 @@
-# Getting_And_Cleaning_Data_JHU_Asgmt
+# Getting_And_Cleaning_Data
 
 The purpose of this assignment was to collect, work with, and clean a data set. 
 At the end, a tidy data set should be returned.
